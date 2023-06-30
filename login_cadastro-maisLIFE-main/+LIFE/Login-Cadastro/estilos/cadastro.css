@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: black;
+}
+
+form {
+    background: white;
+    max-width: 1000px;
+    width: 80%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 100px -12px #946fd8 ;
+}
+
+#container {
+    display: flex;
+}
+
+img {
+    width: 22rem;
+    position: relative;
+    animation: container-animacao 5s infinite;
+}
+
+@keyframes container-animacao {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    margin-bottom: 40px;
+}
+
+#container-inputs {
+    width: 50%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+#termos {
+    display: flex;
+    align-items: center;
+}
+
+#termos input {
+    margin: 0;
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background: black;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: 0px 10px 40px -12px #8a795f ;
+    margin-top: 20px;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#inputs {
+    width: 50%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input[type=text], form input[type=password] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: 1s;
+    margin-bottom: 25px;
+}
+
+form input[type=submit] {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background:black;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: 0px 10px 40px -12px #5F7C8A ;
+    margin-bottom: 20px;
+}
+
+form input[type=submit]:hover {
+    background: black;
+}
+
+.on:focus {
+    background: black;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    outline: 0; 
+    transition: 1s;
+}
+
+.on:focus::placeholder {
+    color: white;
+}
+
+#inputs label {
+    color: black;
+}

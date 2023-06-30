@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-repeat: repeat;
+    background-size: 50%;   
+}
+    
+form {
+    background: rgb(255, 255, 255);
+    max-width: 1000px;
+    width: 80%;
+    padding: 30px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 100px -12px rebeccapurple;
+}
+
+#menu {
+    display: flex;
+    
+}
+
+#imagem {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagem img {
+    width: 22rem;
+    position: relative;
+    animation: imagem-animacao 5s infinite;
+}
+
+@keyframes imagem-animacao {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+#up h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+#inputs {
+    width: 50%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input[type=text], form input[type=password] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: 1s;
+    margin-bottom: 25px;
+}
+
+form input[type=submit] {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background:black;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: 0px 10px 40px -12px #5F7C8A ;
+    margin-bottom: 20px;
+}
+
+form input[type=submit]:hover {
+    background: gray;
+}
+
+.on:focus {
+    background: black;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    outline: 0; 
+    transition: 1s;
+}
+
+.on:focus::placeholder {
+    color: white;
+}
+
+#inputs label {
+    color: #000000;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+}
+
+h3 a{
+    text-decoration: none;
+    font-size: 15px;
+    color:#000000
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
